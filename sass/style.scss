@@ -256,9 +256,46 @@ figure {
 				}
 			}
 		}
+
 	}
-	
-#mystyle-main {
+
+	.mystyle-footer {
+	font-size: 15px;
+	text-align: center;
+	font-weight: 400;
+	color: rgba(0,0,0,.5);
+	padding: 0 20px;
+	width: 100%;
+	@media screen and (max-width: $screen-sm) {
+		position: relative;
+		bottom: 0;
+	}
+	span {
+		display: block;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			padding: 0;
+			margin: 0;
+			display: inline;
+			list-style: none;
+			a {
+				color: rgba(255,255,255,.3);
+				padding: 4px;
+				&:hover, &:active, &:focus {
+					text-decoration: none;
+					outline: none;
+					color: $brand-primary;
+				}
+			}
+		}
+	}
+}
+
+
+	#mystyle-main {
 	width: calc(100%);
 	float: right;
 	@include transition(.5s);
@@ -478,7 +515,6 @@ body {
 	font-weight: 500;
 	letter-spacing: 5px;
 }
-
 //ABOUT
 .about-img{
 	width: 100%;
