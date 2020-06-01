@@ -459,6 +459,7 @@ body {
 
 .mystyle-narrow-content{
 	padding: 0 2.5em;
+	
 	@media screen and(max-width: $screen-sm){
 		padding: 0;
 	}
@@ -493,11 +494,11 @@ body {
 
 .mystyle-heading {
 	font-size: 18px;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	line-height: 1.8;
+	line-height: 1.0;
 	position: relative;
 	span {
 		display: block;
@@ -1378,12 +1379,6 @@ margin-left: -20px;
 
 
 // Helper Class
-.col-xxs-12 {
-	@media screen and (max-width: 480px) {
-		float: none;
-		width: 100%;
-	}
-}
 .row-bottom-padded-lg {
 	padding-bottom: 7em;
 	@media screen and (max-width: $screen-sm ) {
@@ -1414,4 +1409,20 @@ margin-left: -20px;
 	.js & {
 		opacity: 0;
 	}
+}
+
+.portfolio-info {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 3;
+	transition: all ease-in-out 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

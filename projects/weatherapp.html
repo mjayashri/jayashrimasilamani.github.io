@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Weather App</h2>
+    <div class="col-lg-4">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../images/weather-forcast.jpg" alt="weather1" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="project_images/weather1.png" alt="weather2" style="width:auto;">
+                </div>
+
+                <div class="item">
+                    <img src="project_images/weather2.jpg" alt="weather3" style="width:auto;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <h3>Project information</h3>
+
+        <p>
+            Weather App is a simple weather forecast app.
+            It is built using node JS/Express.The app gives
+            the information of the current weather when the location is given as input.</p>
+        <strong>Tools used</strong>
+
+        <strong>Front-End</strong>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Node.js</li>
+            <li>HandleBar(hbs)</li>
+        </ul>
+
+        <strong>APIs</strong>
+        <ul>
+            <li>Weather stack API</li>
+            <li>Mapbox APi</li>
+        </ul>
+
+        <strong>NPM Packages</strong>
+        <ul>
+            <li>Express</li>
+            <li>Request</li>
+            <li>Nodemon</li>
+        </ul>
+        The app is Deployed in Heroku
+    </div>
+</div>
+<footer class="text-center" style="padding-bottom: 25px">
+    ***
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+</body>
+</html>
