@@ -740,6 +740,8 @@ margin-left: -20px;
 	@media screen and(max-width: $screen-sm){
 		margin-bottom: 4em;
 	}
+
+
 	.icon{
 		position: absolute;
 		top: -20px;
@@ -779,6 +781,7 @@ margin-left: -20px;
 			display: table-cell;
 			vertical-align: middle;
 		}
+
 	}
 	.desc{
 		margin-top: 60px;
@@ -786,6 +789,9 @@ margin-left: -20px;
 			font-size: 16px;
 			font-weight: 700;
 			text-transform: uppercase;
+		}
+		ul{
+			list-style-type: none;
 		}
 	}
 	&.color-2{
